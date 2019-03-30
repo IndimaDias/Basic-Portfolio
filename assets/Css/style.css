@@ -7,7 +7,7 @@
 /* Style for Main container in the header part */
 .sMain{
     background-color:white;
-    position: fixed;
+    position: absolute;
     width:100%;
     height:12%;
     border-bottom: 1px solid #cccccc;
