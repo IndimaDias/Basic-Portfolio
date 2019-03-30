@@ -4,6 +4,7 @@
     background-image: url("../images/leaves.png")
 }
 
+/* Style for Main container in the header part */
 .sMain{
     background-color:white;
     position: fixed;
@@ -13,6 +14,7 @@
     top:0;
 }
 
+/* Style for header */
 .sHeader{
     position: absolute;
     background-color:#4aaaa5;
@@ -24,6 +26,7 @@
     top:0;
 }
 
+/* Style for container with navigation items */
 .sMenu{
     background-color: aqua;
     margin-right:0;
@@ -31,14 +34,7 @@
     margin-top:45px;
 }
 
-/* #menu a{
-    float:left;
-    display: inline-block;
-    text-decoration: none;/*removes the underline 
-    width:30%;
-    text-align:center;
-} */
-
+/* style for navigation tabs */
 .sLink {
     float:left;
     display: inline-block;
@@ -60,6 +56,7 @@
     margin:20px;
 }
 
+/* style for container with about me, contact form or portsfolio */
 .sContent{ 
     background-color: white;
     margin-top:20px; 
@@ -70,12 +67,14 @@
 
 }
 
+/* Style for formating the division  */
 .dFormat{
     width:60%;
     margin:auto;
     height:auto;
 }
 
+/* style for the footer */
 .sFooter{
     background-color:#666666;
     position: fixed;
@@ -88,6 +87,7 @@
     border-top-width: thick;
 }
 
+/* All paragraphs are styled with the following */
 p{
     text-align: justify;
     margin: 10px 20px;
@@ -111,6 +111,7 @@ p{
     margin:20px;
 }
 
+/* style for input fields */
 .input{
     width:100%;
     margin-top:5px;
@@ -118,12 +119,14 @@ p{
     padding: 5px 0;
 }
 
+/* style for submit button */
 .sButton{
     background-color: darkcyan;
     padding:5px 20px;
     color: white;
 }
 
+/* style for grid with portfoli images */
 .imgGrid{
     display:grid;
     background-color: white;
@@ -133,6 +136,7 @@ p{
     
 }
 
+/* style for container of a grid item */
  .gridItem{
     margin-bottom: 20px; 
 }   
