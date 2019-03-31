@@ -1,8 +1,13 @@
 /* Style for the page body */
 .sBody{
     background-color:#eff3f9;
-    background-image: url("../images/leaves.png")
+    background-image: url("../images/leaves.png");
+    
 }
+/* 
+#mainContent{
+    min-height: clac(100vh-50px);
+} */
 
 /* Style for Main container in the header part */
 .sMain{
@@ -11,7 +16,7 @@
     width:100%;
     height:12%;
     border-bottom: 1px solid #cccccc;
-    top:0;
+    top:0; 
 }
 
 /* Style for header */
@@ -56,7 +61,7 @@
     margin:20px;
 }
 
-/* style for container with about me, contact form or portsfolio */
+/* style for container with about me, contact form or portfolio */
 .sContent{ 
     background-color: white;
     margin-top:20px; 
@@ -79,6 +84,7 @@
     background-color:#666666;
     position: fixed;
     width:100%;
+    height: 20px;
     padding: 20px;
     bottom:0;
     text-align: center;
@@ -139,6 +145,7 @@ p{
 /* style for container of a grid item */
  .gridItem{
     margin-bottom: 20px; 
+    position: relative;
 }   
 
 .imgPortfolio{
@@ -150,5 +157,8 @@ p{
     background-color: darkcyan;
     text-align: center;
     padding: 10px ;
-
+    position: absolute;
+    bottom:15px;
+    margin:0;
+    width:90%;
 }
