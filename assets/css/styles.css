@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap');
 
 #divImg{
-    
-    background-image: url("../images/10615394_761967683841982_2187095700135005913_n.jpg"); 
-    background-size:cover; 
     background-repeat: no-repeat; 
     height: 100vh;
     padding: 0;

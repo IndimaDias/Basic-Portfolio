@@ -14,7 +14,7 @@ $(document).ready(function(){
     // Down arrow click
 
     $("#btnArrow").on("click",function(e) {
-        debugger;
+
         e.preventDefault();
         var aid = $(this).attr("href");
         $('html,body').animate({scrollTop: $(this).offset().top},500);
