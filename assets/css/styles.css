@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap');
+
+#divImg{
+    
+    background-image: url("../images/10615394_761967683841982_2187095700135005913_n.jpg"); 
+    background-size:cover; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    padding: 0;
+   
+}
+
+
+#divBody{
+    height: 100vh;
+}
+
+#divColorBlock{
+    height: 100vh;
+    background-color: rgb(255, 251, 0);
+    
+}
+
+#imgSelf, #imgAbout{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+#nameRow{
+    margin: 25% 0;
+}
+
+#btnMenu{
+margin: 20px 20px 0 0;   
+}
+
+
+#divScroll{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    margin-left: 50%;
+    margin-right: 50%;
+    bottom: -20px
+}
+
+.aboutMe{
+    text-align: justify;
+    line-height: 1.75rem;
+    font-size: 17px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    padding: 0 10px;
+
+}
+
+.about{
+    margin: 100px 100px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: rgb(9, 9, 71);
+    height: 100vh;
+}
+
+#imgAbout{
+    /* margin-top:50%;
+    margin-bottom: 50%; */
+    width: 60%;
+}
+
+.btnIcon{
+    width: 42px;
+    height: 42px;
+    margin:10px;
+}
+
+#divInfo{
+    margin-top: 40px;
+    padding: 0 50px;
+}
+
+/* styles for download resume button */
+#btnDownload{
+    padding: 5px;
+}
+
+.icons{
+   padding: 0 5px;
+}
+
+#downloadSpan{
+    padding: 5px;
+}
+
+.projectLinks{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    padding-left: 100px;
+}
+
+.container{
+    border: solid 1px grey;    
+
+}
+
+.cardRow{
+    display: flex;
+   align-content: center;
+}
+
+#card1, #card2, #card3, #card4, #card5{
+    margin : 0 auto;
+}
+
+#divDropdown{
+    position: absolute;
+    display: none;
+    z-index: 1;   
+    background-color: rgba(247, 7, 7, 0.2); 
+    /* min-width: 200px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 40%;
+    
+}
+
+#divDropdown a {
+    color: black;
+    padding: 30px 35px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;   
+    font-size: 30px;
+    
+   
+  }
+
+.divMenu{
+    position: relative;
+    /* display: inline-block;    */
+     
+}
+
+
+
+/* admin file css */
+#cardLogin{
+    margin:25%;
+    padding : 0 2%;
+}

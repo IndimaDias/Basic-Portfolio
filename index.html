@@ -1,65 +1,217 @@
 <!DOCTYPE html>
-<!--About me page for basic portfolio website. This is the home page-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
 
-<html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My portfolio</title>
-        <link rel="stylesheet" type="text/css" href="./assets/Css/style.css">
-    </head>
+    <link rel="stylesheet" type ="text/css" href = "assets/css/reset.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">
+    
+    <link rel = "stylesheet" type = "text/css" href="./assets/css/styles.css">
 
-    <body id="indexB" class="sBody"> <!--Body of the index page-->
-        <div id="mainContent">
-            <section id="iMain" class="sMain"> <!--main section with the header-->
-                <div class="hFormat"> <!--Parent section for header nad menu bars-->
-                    <header id="iHeader" class="sHeader">            
-                        <h2>Indima Dias</h2>
-                    </header>   
-                    <div id="menu" class="sMenu"> <!--Section with menu bars-->
-                        
-                            <a id="link1" class="lborder sLink" href="./index.html">About</a> 
-                        
-                            <a id ="link2" class="lborder sLink" href ="./portfolio.html">Portfolio</a>
-                        
-                            <a id ="link3" class="sLink" href="./contact.html">Contact</a>
-                        
-                    </div>                             
-                </div>
+    
+    
+</head>
+<body>
+<!--************************************This section is for the main screen**************************************** -->
+    <div  id = "divBody" class = "row"> 
+        <!-- section for the main screen -->
 
+        <div id = "divImg" class = "col l5">
+            <!-- column in the left with the image -->
+            <img id = "imgSelf" src="./assets/images/10615394_761967683841982_2187095700135005913_n.jpg">
+                    
+        </div>
 
-            </section>
+                    
+        <div id = "divColorBlock" class = "col l7 ">
+            <!-- column with yellow background -->
+            <div class="row right-align divMenu">
+                <a id="btnMenu" href ="#">
+                    <i class="medium material-icons black-text">menu</i></a>
+                    <div id = "divDropdown" class="col l6">                       
+                        <a href="#myStory">About me</a>
+                        <a href="#myPortfolio">Project Work</a>
+                                               
+                    </div>                    
+                    
+            </div>
             
-            <div class ="dFormat">
-                <section id="iContent" class ="sContent"> <!--Section with the image and pargraph-->
-                    <img id="flower" src="./assets/images/10615394_761967683841982_2187095700135005913_n.jpg">
-
-                    <p>
-                        My name is Indima Dias. Originally from a tiny island called Sri Lanka and living in USA today. That’s me in the picture 23 years ago, when I was dreaming to become a Doctor but ended up being a software engineer. 
-                        I entered the path of computer science when I even did not know how to use a computer. But I took the challenge and achieved my goal. Programming 
-                        became my favorite subject. I believe I can adapt to any new environment and take new challengers. I believe I am a good mom, a loving wife, a great daughter and sister and a friend that friends can count on.
-                    </p>
-
-                    <p>
-                        I am so blessed with a loving husband and two adorable challenging kids. I became SAHM after my daughter was born. 
-                        I love arts and crafts. So I used the opportunity of being at home to improve my arts and crafts skills.
-                        My favorite hobby is making little girls’ cloths. Apart from that I love crochet, making felt ornaments and reading.  
-                        And I love to volunteer at school projects.
-                    </p>
-
-                    <p>
-                        I enjoy coding and I enjoy learning new programming languages. Apart from being a mother I realized that I should be a role model to my daughter.
-                        So I decided to start where I stopped in my carrier. My next goal is to achieve the best in full stack programming and make a web site to help my kids learn my mother language “Sinhala”
-                    </p>
-                </section>
+            <div id = "nameRow" class="row">
+                <h1 class="center-align">HI! I'M INDIMA DIAS</h1>
+                <h5 class = "center-align">WEB APPLICATION DEVELOPER FROM PORTSMOUTH, NH</h5>
             </div>
 
         </div>
-        <div id = "dFooter" >
-            <footer id="iFooter" class="sFooter">
-                copyright@
-            </footer>
+
+        <div id = "divScroll" class="row">
+            <!-- Scroll down button -->
+                <a id="btnArrow" class="btn-floating N/A transparent " name="myStory" href="#myStory1">
+                    <i class="medium material-icons black-text">keyboard_arrow_down</i></a>
         </div>
 
-    </body>
+    </div>
+       
+<!-- ************************************************************************************************************* -->
+
+<!-- .........................................This is section is for the screen with my story....................... -->
+    <div class="row about">        
+        <!-- section with my story and contact info -->        
+        <div class="col l6 center-align">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">MY STORY</span>
+                    <p class="aboutMe"> 
+                        I am a Web Applications Developer with a background in Software Engineering with many years 
+                        of experience in back-end and front-end application development. 
+                        My previous experience includes being a dedicated team lead with problem solving, analytic,
+                        designing, coding and testing skills. Learning web application development motivated me to add 
+                        more skills to my list. 
+                    </p>
+                    <br>
+                    <p class=aboutMe>
+                        The University of New Hampshire Coding Bootcamp helped me master skills like 
+                        JavaScript, HTML, CSS, jQuery, AJAX, ReAct and mySql. I have the confidence that with my experience as a 
+                        team lead and the knowledge gained developing creative, efficient, user friendly web applications that I would
+                        be a valuable asset to any development team.
+                    </p> 
+                </div>
+                <div class="card-action">
+                        <a class="waves-effect waves-light btn-large blue darken-1 white-text">
+                            <i class="material-icons icons left">file_download</i> Download Resume</a>
+                </div>
+            </div>                                
+
+        </div>
+        <div class="col l6 center-align">
+            <div class="row">
+                <img id = "imgAbout" src="assets/images/img_bg_2.jpg">
+            </div>
+            <div id = "divInfo" class="row">
+                
+                <div class="row">
+                    Indima Dias
+                </div>
+                <div class="row">
+                    <i class="material-icons black-text"> phone </i> : +1603-380-8624
+                    
+                </div>
+                <div class="row">
+                    <i class="material-icons black-text"> email </i> : indimad@yahoo.com
+                </div>
+
+                <div class="row">
+                    <a href="#"> <img class = "btnIcon" src="./assets/images/icons8-linkedin-48.png"></a>
+                    <a href="#"> <img class = "btnIcon" src="./assets/images/GitHub-Mark-32px.png"></a>
+                    <a href="#"> <img class = "btnIcon" src="./assets/images/f_logo_RGB-Blue_58.png"></a>
+                    <a href="#"> <img class = "btnIcon" src="./assets/images/Twitter_Social_Icon_Circle_Color.png"></a>
+
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-- ........................................................................................................... -->
+
+<!-- -------------------------------This is section is for the porject work---------------------------------------- -->
+    <div class="container">
+        <div class="row">
+            <h3 class="center-align"> <a name="myPortfolio">MY PORTFOLIO</a></h3>
+        </div>
+            <!-- This section is for the projects -->
+        <div class="row cardRow">
+            <div id = "card1" class="col l5 ">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/wordGuess.png" alt="word guess game">
+                        
+                    </div>
+                    <div class="card-action">
+                        <a class = "projectLinks center-align black-text" href="https://indimadias.github.io/Word-Guess-Game/"> Word Guess Game</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id = "card2" class="col l5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/crystalCollector.png" alt="Crystal Collector">
+                        
+                    </div>
+                    <div class="card-action">
+                        <a class = "projectLinks center-align black-text" href="https://indimadias.github.io/unit-4-game/"> Crystal Collector</a>
+                    </div>
+                    
+                </div>
+            </div>            
+        </div>    
+        <div class="row cardRow">
+            <div id = "card3" class="col l5 ">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/Trivia.png" alt="Space Trivia">
+                        
+                    </div>
+                    <div class="card-action">
+                        <a class = "projectLinks center-align black-text" href="https://indimadias.github.io/TriviaGame/"> Space Trivia</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id = "card4" class="col l5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/Train.PNG" alt="Crystal Collector">
+                        
+                    </div>
+                    <div class="card-action">
+                        <a class = "projectLinks center-align black-text" href="https://indimadias.github.io/TrainSchdule/"> Crystal Collector</a>
+                    </div>
+                    
+                </div>
+            </div>            
+        </div>    
+        <div class="row cardRow">
+            <div id = "card5" class="col l5 ">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/Giphy.png" alt="Space Trivia">
+                        
+                    </div>
+                    <div class="card-action">
+                        <a class = "projectLinks center-align black-text" href="https://indimadias.github.io/SearchWithGIPHY/"> Space Trivia</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- <div id = "card4" class="col l5">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/Train.PNG" alt="Crystal Collector">
+                        
+                    </div>
+                    <div class="card-action">
+                        <a class = "projectLinks center-align black-text" href="https://indimadias.github.io/TrainSchdule/"> Crystal Collector</a>
+                    </div>
+                    
+                </div>
+            </div>             -->
+        </div>    
+    </div>
+
+    
+ <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="assets/javascript/app.js"></script>
+            
+</body>
 </html>
