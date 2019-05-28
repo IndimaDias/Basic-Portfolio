@@ -20,6 +20,14 @@ $(document).ready(function(){
         $('html,body').animate({scrollTop: $(this).offset().top},500);
     });
 
+    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    // Download button click 
+
+    $('#btnDownload').click(function(e) {
+        e.preventDefault();  //stop the browser from following
+        window.location.href = '../uploads/Resume-Indima.pdf';
+    });
 
     var config = {
         apiKey: "AIzaSyBXHhqgb-e5jirVkCNUWT_-KRv9ORAfeNg",
