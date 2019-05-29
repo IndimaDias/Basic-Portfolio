@@ -53,7 +53,7 @@ margin: 20px 20px 0 0;
 }
 
 .about{
-    margin: 100px 100px;
+    margin: 200px 200px 100px 200px;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     color: rgb(9, 9, 71);
@@ -97,14 +97,22 @@ margin: 20px 20px 0 0;
     padding-left: 100px;
 }
 
-.container{
+#divPortfolio{
     border: solid 1px grey;    
-
+    margin-left: 5%;
+   
 }
 
 .cardRow{
     display: flex;
-   align-content: center;
+   /* position: absolute; */
+   /* width : 100%;
+   margin-left: 30%;
+   margin-right:auto;
+   height: 100%; */
+   /* padding: 100px; */
+
+   
 }
 
 #card1, #card2, #card3, #card4, #card5{
@@ -149,3 +157,27 @@ margin: 20px 20px 0 0;
     margin:25%;
     padding : 0 2%;
 }
+
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+    #divPortfolio{
+        margin : 30% 2% 10% 2%;
+        
+        
+
+    }
+
+    #divRow{
+        margin: 0 5%;
+    }
+
+    .about{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .cardRow{
+        display: inline-block;
+} 
