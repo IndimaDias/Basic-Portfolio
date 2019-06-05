@@ -81,12 +81,13 @@ $(document).ready(function(){
                 var divCardCol = $("<div>");
                 divCardCol.addClass("col s12 m10 l6 cardx");
 
-                divCardCol.attr("id");
+                // divCardCol.attr("id");
                 divCardCol.append(divCard);
 
-                var divRow = $("<div>");
+                var divRow = $("<div>");                
                 divRow.addClass("row cardRow");
                 divRow.append(divCardCol);
+                // divRow.append(divCard);
 
                 var divPortfolio = $("#divPortfolio");
                 divPortfolio.append(divRow);
