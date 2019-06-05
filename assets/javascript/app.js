@@ -15,7 +15,6 @@ $(document).ready(function(){
       var database = firebase.database();
 
     $("#divDropdown").hide();
-    debugger;
     loadProjects();
     
 
