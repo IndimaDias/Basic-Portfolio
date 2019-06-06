@@ -39,7 +39,7 @@ $(document).ready(function(){
     $('#btnDownload').click(function(e) {
         
         e.preventDefault();  //stop the browser from following
-        window.location.href = '../uploads/Resume-Indima.pdf';
+        window.location.href = 'assets/uploads/ResumeIndima.pdf';
     });
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
