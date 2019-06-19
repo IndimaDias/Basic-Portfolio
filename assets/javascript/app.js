@@ -48,12 +48,15 @@ $(document).ready(function(){
         // this function will dynamically build a card for each record in the database 
         // this card includes the image, and the link to the page 
        
+        var divRow = $("<div>");
+
+        divRow.addClass("cardRow row");
+        divRow.attr("id","divProjects");
 
         database.ref("projects/").on("child_added",function(snapshot){
-            console.log("test");
-            console.log(snapshot.val());
+           
             var data= snapshot.val();
-            // console.log("test1"+data)
+           
 
                 var cardImage = $("<div>");
                 cardImage.addClass("card-image");
@@ -63,7 +66,7 @@ $(document).ready(function(){
                 proImage.attr("alt",data.projectName);
 
                 var cardAction = $("<div>");
-                cardAction.addClass("card-action");
+                cardAction.addClass("card-action center-align");
         
                 var proLink = $("<a>");
                 proLink.addClass("projectLinks center-align black-text");
@@ -79,15 +82,14 @@ $(document).ready(function(){
                 divCard.append(cardAction);
 
                 var divCardCol = $("<div>");
-                divCardCol.addClass("col s12 m10 l6 cardx");
+                divCardCol.addClass("col s12 m10 l5 cardx");
 
-                // divCardCol.attr("id");
+               
                 divCardCol.append(divCard);
 
-                var divRow = $("<div>");                
-                divRow.addClass("row cardRow");
+         
                 divRow.append(divCardCol);
-                // divRow.append(divCard);
+                
 
                 var divPortfolio = $("#divPortfolio");
                 divPortfolio.append(divRow);

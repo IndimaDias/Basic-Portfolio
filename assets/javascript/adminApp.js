@@ -1,18 +1,7 @@
 $(document).ready(function(){
 debugger;
 $("#cardProjects").hide();  
-    // configure firebase database and initiate it 
-    // var config = {
-    //     apiKey: "AIzaSyBXHhqgb-e5jirVkCNUWT_-KRv9ORAfeNg",
-    //     authDomain: "projectportfolio-716ce.firebaseapp.com",
-    //     databaseURL: "https://projectportfolio-716ce.firebaseio.com",
-    //     projectId: "projectportfolio-716ce",
-    //     storageBucket: "projectportfolio-716ce.appspot.com",
-    //     messagingSenderId: "24314421763",
-    //     appId: "1:24314421763:web:7ea835ad30cdc86c"
-    //   };
-      
-    //   firebase.initializeApp(config);
+  
       
       var database = firebase.database();
 
