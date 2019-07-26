@@ -1,6 +1,6 @@
 $(document).ready(function(){
    
-    setTimeout(startSVGAnimation($('svg')),3000);
+    // setTimeout(startSVGAnimation($('svg')),3000);
 
     var config = {
         apiKey: "AIzaSyBXHhqgb-e5jirVkCNUWT_-KRv9ORAfeNg",
