@@ -1,5 +1,7 @@
 $(document).ready(function(){
    
+    setTimeout(startSVGAnimation($('svg')),3000);
+
     var config = {
         apiKey: "AIzaSyBXHhqgb-e5jirVkCNUWT_-KRv9ORAfeNg",
         authDomain: "projectportfolio-716ce.firebaseapp.com",
@@ -77,7 +79,7 @@ $(document).ready(function(){
                 cardAction.append(proLink);
 
                 var divCard = $("<div>");
-                divCard.addClass("card");
+                divCard.addClass("card cardProject");
                 divCard.append(cardImage);
                 divCard.append(cardAction);
 
