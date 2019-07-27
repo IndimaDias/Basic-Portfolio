@@ -60,11 +60,13 @@ $("#btnAddImg").on("click",function(event){
     var projectName = $("#proTitle").val().trim();
     var imgLink = $("#imgAddress").val().trim();
     var projectLink = $ ("#proLink").val().trim();
+    var proGitLink = $("#proGitLink").val().trim();
 
     database.ref("projects").push({
         projectName : projectName,
         imgLink : imgLink,
         projectLink : projectLink,
+        gitLink : proGitLink,
         dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
 
