@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700&display=swap');
 
+body{
+    background-color: rgb(216, 213, 213);
+}
+
 #divImg{
     background-repeat: no-repeat; 
     height: 100vh;
@@ -10,6 +14,7 @@
 
 #divBody{
     height: 100vh;
+   
 }
 
 #divColorBlock{
@@ -53,11 +58,15 @@ margin: 20px 20px 0 0;
 }
 
 .about{
-    margin: 200px 200px 100px 200px;
+    margin: 50px 50px 50px 50px;
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     color: rgb(9, 9, 71);
-    height: 100vh;
+    height: auto;
+    background-color: white;
+    padding-top: 10%;
+    padding-left: 5%;
+   
 }
 
 #imgAbout{
@@ -127,7 +136,6 @@ margin: 20px 20px 0 0;
     display: none;
     z-index: 1;   
     background-color: rgba(247, 7, 7, 1); 
-    /* min-width: 200px; */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     margin-left: auto;
@@ -183,6 +191,7 @@ margin: 20px 20px 0 0;
 }
 /* media queries */
 
+
 @media only screen and (max-width: 600px) {
     #divPortfolio{
         margin : 30% 2% 10% 2%;            
@@ -194,6 +203,8 @@ margin: 20px 20px 0 0;
     }
 
     .about{
+        /* margin-top: 50%; */
+       
         margin-left: 2%;
         margin-right: 2%;
     }
@@ -211,11 +222,24 @@ margin: 20px 20px 0 0;
         font-family: 'Oswald', sans-serif;
         font-weight: 400;   
         font-size: 30px;
-} 
+    } 
 
-#nameRow{
-    margin-left: 30px;
-}
+    #nameRow{
+        margin-left: 30px;
+    }
+
+    #divProjects{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding-left: 0;
+    
+    }
+
+    #divColorBlock{
+        height: auto;
+        
+    }
 }
 
 
@@ -223,10 +247,38 @@ margin: 20px 20px 0 0;
     .about{
         margin-left: 2%;
         margin-right: 2%;
+        padding: 0;
     }
 
     .cardRow{
         display: inline-block;
         padding-left: 10%;
+    }
+
+
+    #divColorBlock{
+        height: auto;
+        
+    }
+
+    #divProjects{
+        width: 100%;
+        padding-left: 0;
+    }    
+    
 }
+
+@media only screen and (min-width: 768px) and (max-width:992) {
+    .about{
+        margin-left: 2%;
+        margin-right: 2%;
+        padding: 0;
+    }
+
+
+
+    #divColorBlock{
+        height: auto;
+        
+    }
 }
