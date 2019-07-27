@@ -69,14 +69,24 @@ $(document).ready(function(){
 
                 var cardAction = $("<div>");
                 cardAction.addClass("card-action center-align");
-        
+
+                var proName = $("<h5>");
+                proName.addClass("projectName center-align black-text");
+                proName.text(data.projectName);
+
                 var proLink = $("<a>");
-                proLink.addClass("projectLinks center-align black-text");
+                // proLink.addClass("projectLinks center-align black-text");
                 proLink.attr("href" ,data.projectLink);
-                proLink.text(data.projectName);
+                proLink.append('<i class="material-icons black-text projectLinks">link</i>');
+
+                var proGitLink = $("<a>");
+                proGitLink.attr("href" ,data.gitLink);
+                proGitLink.append('<img class = "btnIcon" src="./assets/images/GitHub-Mark-32px.png">');
+
+                // proLink.text(data.projectName);
 
                 cardImage.append(proImage);
-                cardAction.append(proLink);
+                cardAction.append(proName,proLink,proGitLink);
 
                 var divCard = $("<div>");
                 divCard.addClass("card cardProject");
