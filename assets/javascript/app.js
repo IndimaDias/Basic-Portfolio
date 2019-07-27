@@ -17,6 +17,7 @@ $(document).ready(function(){
       var database = firebase.database();
 
     $("#divDropdown").hide();
+    startAnimation();
     loadProjects();
     
 
@@ -54,12 +55,12 @@ $(document).ready(function(){
 
         divRow.addClass("cardRow row");
         divRow.attr("id","divProjects");
-
+        var i = 0;
         database.ref("projects/").on("child_added",function(snapshot){
            
             var data= snapshot.val();
-           
-
+                i += 1;
+                
                 var cardImage = $("<div>");
                 cardImage.addClass("card-image");
         
@@ -94,7 +95,8 @@ $(document).ready(function(){
                 divCard.append(cardAction);
 
                 var divCardCol = $("<div>");
-                divCardCol.addClass("col s12 m10 l5 cardx");
+                divCardCol.addClass("col s12 m9 l4 cardx");
+                divCardCol.attr("id","id"+i);
 
                
                 divCardCol.append(divCard);
@@ -110,7 +112,25 @@ $(document).ready(function(){
         },function(errorobj){
              // In case of error this will print the error
         console.log("The read failed: " + errorObject.code);
-        })
+        });
     }
-      
-})
+
+    // *****************************
+function startAnimation(){
+    var elements = $('.txt-rotate');
+    for (var i=0; i<elements.length; i++) {
+      var toRotate = $(elements[i]).attr('data-rotate');
+      var period = $(elements[i]).attr('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    // var css = document.createElement("style");
+    // css.type = "text/css";
+    // css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+    // document.body.appendChild(css);
+  };
+
+    
+});
