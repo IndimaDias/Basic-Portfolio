@@ -18,7 +18,15 @@ $(document).ready(function(){
 
     $("#divDropdown").hide();
     startAnimation();
-    loadProjects();
+    // loadProjects();
+    
+   
+//   loadCarousel();
+    
+
+
+$('#carousel1').carousel();
+   
     
 
     // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -46,74 +54,7 @@ $(document).ready(function(){
     });
 
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-    function loadProjects (){
-        
-        // this function will dynamically build a card for each record in the database 
-        // this card includes the image, and the link to the page 
-       
-        var divRow = $("<div>");
-
-        divRow.addClass("cardRow row");
-        divRow.attr("id","divProjects");
-        var i = 0;
-        database.ref("projects/").on("child_added",function(snapshot){
-           
-            var data= snapshot.val();
-                i += 1;
-                
-                var cardImage = $("<div>");
-                cardImage.addClass("card-image");
-        
-                var proImage = $("<img>");
-                proImage.attr("src",data.imgLink);
-                proImage.attr("alt",data.projectName);
-
-                var cardAction = $("<div>");
-                cardAction.addClass("card-action center-align");
-
-                var proName = $("<h5>");
-                proName.addClass("projectName center-align black-text");
-                proName.text(data.projectName);
-
-                var proLink = $("<a>");
-                // proLink.addClass("projectLinks center-align black-text");
-                proLink.attr("href" ,data.projectLink);
-                proLink.append('<i class="material-icons black-text projectLinks">link</i>');
-
-                var proGitLink = $("<a>");
-                proGitLink.attr("href" ,data.gitLink);
-                proGitLink.append('<img class = "btnIcon" src="./assets/images/GitHub-Mark-32px.png">');
-
-                // proLink.text(data.projectName);
-
-                cardImage.append(proImage);
-                cardAction.append(proName,proLink,proGitLink);
-
-                var divCard = $("<div>");
-                divCard.addClass("card cardProject");
-                divCard.append(cardImage);
-                divCard.append(cardAction);
-
-                var divCardCol = $("<div>");
-                divCardCol.addClass("col s12 m9 l4 cardx");
-                divCardCol.attr("id","id"+i);
-
-               
-                divCardCol.append(divCard);
-
-         
-                divRow.append(divCardCol);
-                
-
-                var divPortfolio = $("#divPortfolio");
-                divPortfolio.append(divRow);
-
-            // }
-        },function(errorobj){
-             // In case of error this will print the error
-        console.log("The read failed: " + errorObject.code);
-        });
-    }
+    
 
     // *****************************
 function startAnimation(){
@@ -132,5 +73,59 @@ function startAnimation(){
     // document.body.appendChild(css);
   };
 
+ //*********************************** */ 
+
+ function loadCarousel(){
+    var divCarouselSlide = $("<div>");
+    
+    // divCarouselSlide.addClass("carousel slide");
+    // divCarouselSlide.attr("id","carousel1");
+    // divCarouselSlide.data("ride","carousel");
+
+    var divCarouselInner = $("#carouselInner");
+    
+    var i = 0;
+    database.ref("projects/").on("child_added",function(snapshot){
+        var data= snapshot.val();
+       
+        
+        var aTag = $("<div>");
+        console.log(i);
+        if (i == 0){
+            aTag.addClass("carousel-item active");
+        }
+        else{
+            aTag.addClass("carousel-item");
+        }
+
+        // aTag.attr("href","#one!");
+                
+        var imgTag = $("<img>").addClass("d-block w-100");
+        imgTag.attr("src",data.imgLink);
+        
+
+        aTag.append(imgTag);
+      
+        divCarouselInner.append(aTag);
+
+
+        i += 1;
+
+    },function(errorobj){
+             // In case of error this will print the error
+        console.log("The read failed: " + errorObject.code);
+    });
+
+
+
+    $('.carousel').carousel({
+        interval: 2000,
+        wrap :true});
+
+ 
+
+    
+   
+ }
     
 });

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    /* background: linear-gradient(to right, #ffffcc 0%, #ff99ff 100%); */
+    background: url(https://cdn.pixabay.com/photo/2017/08/27/23/11/background-2687925_960_720.jpg);
+    background-size: cover;
+    
+  }
+  
+ 
+   
+
+.card{
+  background: inherit;
+}
+
+#divPortfolio{
+  border: solid 1px grey;    
+  margin-left: auto;
+  margin-right: auto;    
+  width: 100%;    
+  position: relative;
+ 
+ 
+ 
+}
+
+.projectLinks .projectName{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+  
+ 
+}
+
+.projectLinks{
+  font-size: 40px;
+}
+
+.projectName{
+ 
+  padding: 5px;
+  font-family : 'Squada One', cursive;
+  font-size: 50px;
+}
+
+#h3Portfolio{
+  font-size: 75px;
+  color:black !important;
+
+}
+#divRow{
+  margin: 5%;
+}
+.cardRow{
+  display: block;
+  width:100%;
+}
+
+
+#divProjects{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;    
+
+}
+
+#cardProjects{
+  top :20%;
+  margin:25%;
+  padding : 0 2%;
+  display: block;
+  z-index: 1;
+  
+}
+
+#divRow{
+  margin: 5%;
+}
+
+
+.cardRow{
+  display: block;
+  width:100%;
+}
+
+.cardx{
+  margin : 100px auto;
+  background-color: aliceblue;
+  border-radius: 10px;
+
+}
+
+.card-action{
+  margin:0;
+  height: 100%;
+  position: absolute;
+  
+}
+
+.card .card-action{
+  border-top: none;
+  height: 100%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+
+.card-image{
+  padding: 0;
+ margin-top: 3%;
+ margin-bottom: 3%;
+}
+
+.proDesc{
+  font-size: 20px;
+  line-height: 30px;
+  margin: 20px 5px;
+  text-align: justify;
+}
+
+.proTech{
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+#divDropdown{
+  position: absolute;
+  display: none;
+  z-index: 888;   
+  background-color: rgba(247, 7, 7, 1); 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: auto;
+  
+}
+
+#divDropdown a {
+  color: black;
+  padding: 50px 35px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;   
+  font-size: 30px;
+  
+ 
+}
+
+.divMenu{
+  position: relative;
+   
+
+}
+
+#btnMenu{
+  margin: 20px 20px 0 0;   
+  }
+  /* .cardProject:hover{
+    transform: rotateZ(360deg) scale(1.3,1.3) translate(10%,-10%);
+    z-index: 1;
+    width: 100%;
+  } */

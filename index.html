@@ -10,9 +10,9 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">
-    
+    <link rel="stylesheet" type = "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">   
     <link rel = "stylesheet" type = "text/css" href="./assets/css/styles.css">
+    
     <!-- <link rel="stylesheet" type="text/css" href="./assets/css/animateCss.css"> -->
 
     
@@ -38,6 +38,7 @@
             <div class="row right-align divMenu">
                 <a id="btnMenu" href ="#">
                     <i class="medium material-icons black-text">menu</i></a>
+                    
                     <div id = "divDropdown" class="col s12 m12 l12">      
                         <a href="./index.html">Home</a>                 
                         <a href="#myStory">About me</a>
@@ -114,7 +115,7 @@
                     <br>
                     <p class=aboutMe>
                         The University of New Hampshire Coding Bootcamp helped me master skills like 
-                        JavaScript, HTML, CSS, jQuery, AJAX, ReAct and mySql. I have the confidence that with my experience as a 
+                        JavaScript, HTML, CSS, jQuery, AJAX, React and MYSQL. I have the confidence that with my experience as a 
                         team lead and the knowledge gained developing creative, efficient, user friendly web applications that I would
                         be a valuable asset to any development team.
                     </p> 
@@ -162,8 +163,35 @@
        <div  id = "divPortfolio" class="col s12 m10">
 
         <div class="row">
-            <h3 class="center-align"> <a name="myPortfolio">MY PORTFOLIO</a></h3>
+            <h3 class="center-align"> <a class="myPortfolio" name="myPortfolio">MY PORTFOLIO</a></h3>
         </div>
+
+        <div id = "carousel1" class="carousel">
+            <a id = "img1" class="carousel-item" href="https://better-dad-app.herokuapp.com/">
+                <img src="./assets/images/betterDad.png">
+            </a>
+            <a id = "img2" class="carousel-item" href="https://indimadias.github.io/Word-Guess-Game/">
+                <img src="./assets/images/wordGuess.png">
+            </a>
+            <a id = "img3" class="carousel-item" href="https://github.com/IndimaDias/Constructor-Word-Guess">
+                <img src="./assets/images//constructorWordGuess.png">
+            </a>
+            <a id = "img4" class="carousel-item" href="https://indimadias.github.io/memory-game/">
+                <img src="./assets/images/Memory_game.png">
+            </a>
+            <a id = "img5" class="carousel-item" href="https://indimadias.github.io/TriviaGame/">
+                <img src="./assets/images/Trivia.png">
+            </a>
+
+
+        </div>
+        <div id = "divLink"class="row">
+                <div id = "linkCol" class="col s12 m6 offset-m6 l12">
+                     <a  class = "blinking" href="projects.html" id = "projectLink"> Load more projects</a> 
+                </div> 
+                
+        </div>
+
            <!-- projects will be populated dynamically in this section  -->
     </div> <!--div col--> 
     </div>
@@ -172,11 +200,12 @@
  <!-- ----------------------------------------------------------------------------------------------------------- -->
 
      <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>         
      <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>    
      <script src ="assets/javascript/appAnimate.js"></script>
      <script src="assets/javascript/app.js"></script>
+     
             
 </body>
 </html>
